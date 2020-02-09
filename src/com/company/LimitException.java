@@ -6,6 +6,7 @@ public class LimitException extends Exception {
     public LimitException(String message, double remainingAmount) {
         super(message);
         this.remainingAmount = remainingAmount;
+        System.out.println("Остаток на счете: " + getRemainingAmount());
     }
 
     public double getRemainingAmount() {

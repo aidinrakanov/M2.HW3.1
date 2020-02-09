@@ -10,7 +10,7 @@ public class BankAccount {
         amount = amount + sum;
         System.out.println("сумма пополнения счета: " + amount);
     }
-    public void WithDraw(double sum) throws LimitException {
+    public void withDraw(double sum) throws LimitException {
         if(sum > amount){
             throw new LimitException("запрашиваемая сумма на снятие больше чем остаток денег на счете", amount);
         }
